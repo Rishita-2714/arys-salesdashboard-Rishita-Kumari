@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "Sales Dashboard API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "/kpis",
+      "request": { "method": "GET", "url": "{{baseUrl}}/kpis" }
+    },
+    {
+      "name": "/sales/time",
+      "request": { "method": "GET", "url": "{{baseUrl}}/sales/time?granularity=month" }
+    },
+    {
+      "name": "/sales/by-category",
+      "request": { "method": "GET", "url": "{{baseUrl}}/sales/by-category" }
+    },
+    {
+      "name": "/sales/by-country",
+      "request": { "method": "GET", "url": "{{baseUrl}}/sales/by-country" }
+    },
+    {
+      "name": "/customers/top",
+      "request": { "method": "GET", "url": "{{baseUrl}}/customers/top?limit=10" }
+    },
+    {
+      "name": "/status/breakdown",
+      "request": { "method": "GET", "url": "{{baseUrl}}/status/breakdown" }
+    }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8000" }
+  ]
+}

@@ -1,0 +1,11 @@
+ORDERNUMBER,SALES,ORDERDATE,PRODUCTLINE,COUNTRY,QUANTITYORDERED,CUSTOMERNAME,STATUS
+10100,1200.5,2024-01-15,Classic Cars,India,5,Atelier graphique,Shipped
+10101,850.0,2024-01-20,Motorcycles,India,3,Signal Gift Stores,Shipped
+10102,2300.0,2024-02-02,Vintage Cars,USA,8,"Australian Collectors, Co.",On Hold
+10103,560.75,2024-02-18,Classic Cars,India,2,La Rochelle Gifts,Cancelled
+10104,4100.0,2024-03-01,Trucks and Buses,Germany,12,Baane Mini Imports,Shipped
+10105,2100.0,2024-03-12,Motorcycles,India,7,Mini Gifts Distributors Ltd.,Resolved
+10106,995.25,2024-04-05,Classic Cars,USA,4,Land of Toys Inc.,Shipped
+10107,1780.0,2024-04-21,Planes,Japan,6,Tokyo Collectables,Shipped
+10108,3200.0,2024-05-04,Vintage Cars,India,10,Euro+ Shopping Channel,Shipped
+10109,760.0,2024-05-15,Trains,India,3,Down Under Souvenirs,In Process
