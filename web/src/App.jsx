@@ -8,6 +8,7 @@ export default function App() {
   const [timeData, setTimeData] = useState([])
   const [categoryData, setCategoryData] = useState([])
   const [statusData, setStatusData] = useState([])
+  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#A28CFF', '#FF6699', '#FF4444', '#00B8D9', '#FFB347', '#B6D7A8'];
 
   useEffect(() => {
     fetch(`${API}/kpis`).then(r=>r.json()).then(setKpis)
@@ -65,7 +66,12 @@ export default function App() {
         <div style={{ padding: 16, border: '1px solid #ddd', borderRadius: 12 }}>
           <h3>Order Status Mix</h3>
           <PieChart width={520} height={320}>
-            <Pie data={statusData} dataKey="value" nameKey="label" cx="50%" cy="50%" outerRadius={110} label />
+            <Pie data={statusData} dataKey="value" nameKey="label" cx="50%" cy="50%" outerRadius={110} label>
+              {statusData.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              ))}
+            </Pie>
+            <Tooltip />
           </PieChart>
         </div>
       </div>
