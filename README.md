@@ -103,10 +103,3 @@ Open http://localhost:5173
 - `GET /customers/top?limit=10`
 - `GET /status/breakdown`
 
-## Notes
-- Replace sample data with your assignment dataset if provided.
-- Keep incremental commits per assignment instructions.
-- Record a 2–4 minute demo: preprocessing → API → dashboard.
-
-## License
-MIT
